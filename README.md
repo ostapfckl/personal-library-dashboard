@@ -11,7 +11,7 @@ The dataset is **continuously updated as new books are purchased and reading pro
 
 ## Dashboard Preview
 
-![Dashboard](ScreenshotHomeLibery.png)
+![Google Sheets Dashboard](personal-library-dashboard-google-sheets.png)
 
 ---
 
