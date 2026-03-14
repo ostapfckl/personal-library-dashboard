@@ -88,30 +88,80 @@ The Power BI dashboard visualizes key insights from the dataset.
 
 Some insights were explored using SQL queries.
 
-### Example 1 — Top Genres in the Library
+### Example 1 — Library Growth and Average Book Price by Year
 
 ```sql
-SELECT genre,
-       COUNT(*) AS books
+SELECT 
+    EXTRACT(YEAR FROM purchase_date) AS year,
+    COUNT(*) AS total_books,
+    ROUND(AVG(price), 2) AS avg_price
 FROM library
-GROUP BY genre
-ORDER BY books DESC
-LIMIT 10;
+WHERE price IS NOT NULL
+GROUP BY EXTRACT(YEAR FROM purchase_date)
+ORDER BY year;
 ```
 
-### Example 2 — Top Publishers
+-- Result:
+
+```
+year | total_books | avg_price
+2020 | 3           | 223.67
+2021 | 7           | 210.86
+2022 | 2           | 374.00
+2023 | 115         | 282.68
+2024 | 152         | 363.50
+2025 | 108         | 440.85
+2026 | 13          | 505.00
+```
+
+---
+
+### Example 2 — Most Expensive and Cheapest Publishers (Price per Page)
 
 ```sql
-SELECT publisher,
-       COUNT(*) AS books
+(SELECT 
+    'Most expensive' AS category,
+    publisher,
+    COUNT(*) AS total_books,
+    ROUND(AVG(pages), 0) AS avg_pages,
+    ROUND(AVG(price / pages), 3) AS avg_price_per_page
 FROM library
+WHERE price IS NOT NULL
+  AND pages > 0
 GROUP BY publisher
-ORDER BY books DESC
-LIMIT 5;
+HAVING COUNT(*) >= 5
+ORDER BY avg_price_per_page DESC
+LIMIT 3)
+
+UNION ALL
+
+(SELECT 
+    'Cheapest' AS category,
+    publisher,
+    COUNT(*) AS total_books,
+    ROUND(AVG(pages), 0) AS avg_pages,
+    ROUND(AVG(price / pages), 3) AS avg_price_per_page
+FROM library
+WHERE price IS NOT NULL
+  AND pages > 0
+GROUP BY publisher
+HAVING COUNT(*) >= 5
+ORDER BY avg_price_per_page
+LIMIT 3);
 ```
 
-These queries help identify the most represented genres and publishers in the personal library.
+-- Result:
 
+```
+category        | publisher             | total_books | avg_pages | avg_price_per_page
+Most expensive  | Meridian Czernowitz   | 7           | 288       | 1.409
+Most expensive  | Артбукс               | 6           | 413       | 1.139
+Most expensive  | Readberry             | 27          | 433       | 1.128
+Cheapest        | Ранок                 | 9           | 524       | 0.586
+Cheapest        | BookChef              | 24          | 509       | 0.595
+Cheapest        | Фоліо                 | 11          | 296       | 0.652
+```
+These queries help identify trends in book acquisition and compare publishers based on the average price per page.
 ---
 
 # Data Description
