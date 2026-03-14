@@ -29,7 +29,7 @@ Used for data exploration and analytical queries to extract insights from the da
 ### Google Sheets
 Used for data cleaning and basic exploration.
 
-![Google Sheets Dashboard](personal-library-dashboard-google-sheets.png.png)
+![Google Sheets Dashboard](personal-library-dashboard-google-sheets.png)
 
 ### Power BI
 Used to build an interactive dashboard that visualizes the key metrics and insights.
