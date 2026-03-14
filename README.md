@@ -1,77 +1,141 @@
-# Personal Library Dashboard
-
-This project analyzes my personal book library using Google Sheets.
-
-The dataset contains information about **401 books**, including title, author, publisher, genre, price, number of pages, and reading progress.
-
-All data in this project is **fully authentic and comes from my personal home library**, which I have been tracking over time.  
-The dataset is **continuously updated as new books are purchased and reading progress changes**.
-
----
-
-## Dashboard Preview
-
-![Google Sheets Dashboard](personal-library-dashboard-google-sheets.png)
-
----
+# Personal Library Analytics
 
 ## Project Overview
+This project analyzes a personal home library using multiple data analysis tools.  
+The goal is to explore reading habits, understand how the library grows over time, and analyze spending patterns on books.
 
-The goal of this project is to explore my reading habits and analyze my personal library using a dashboard with interactive filters and visualizations.
-
-The dashboard allows analysis of:
-
-- total spending on books
-- number of books purchased
-- pages read
-- average book length
-- reading status distribution
-- books purchased by year
-- most common publishers
-- most common genres
-- most expensive books
-
-Filters allow the dashboard to be explored by **year, month, and publisher**.
+The analysis combines SQL, Google Sheets, and Power BI to transform raw library data into insights and visualizations.
 
 ---
 
-## Dataset
+# Research Objective
 
-The dataset represents a personal book library containing metadata for **401 books**, including:
+The main objectives of this analysis are:
 
-- title
+- Analyze personal reading habits
+- Track the growth of the home library over time
+- Measure reading progress and completion rate
+- Identify the most common genres and publishers
+- Analyze spending patterns on books
+- Explore relationships between book price, pages, and reading activity
+
+---
+
+# Tools Used
+
+### SQL
+Used for data exploration and analytical queries to extract insights from the dataset.
+
+### Google Sheets
+Used for data cleaning and basic exploration.
+
+![Google Sheets Dashboard](sheets/personal-library-dashboard-google-sheets.png)
+
+### Power BI
+Used to build an interactive dashboard that visualizes the key metrics and insights.
+
+---
+
+# Project Structure
+
+```
+personal-library-dashboard
+│
+├── powerbi
+│   └── personal-library-powerbi-dashboard.png
+│
+├── sheets
+│   └── personal-library-dashboard-google-sheets.png
+│
+├── sql
+│   └── library-analysis.sql
+│
+└── README.md
+```
+
+---
+
+# Power BI Dashboard
+
+The Power BI dashboard visualizes key insights from the dataset.
+
+### Key Metrics
+
+- Total Library Cost
+- Total Books
+- Total Pages
+- Books Read
+- Completion Rate
+- Average Book Price
+- Cost per Page Read
+
+### Analytical Insights
+
+- Books acquired by year
+- Reading completion trend
+- Genre distribution
+- Top publishers
+- Reading status distribution
+- Average book price trend
+
+### Dashboard Preview
+
+![Power BI Dashboard](powerbi/personal-library-powerbi-dashboard.png)
+
+---
+
+# SQL Analysis Examples
+
+Some insights were explored using SQL queries.
+
+### Example 1 — Top Genres in the Library
+
+```sql
+SELECT genre,
+       COUNT(*) AS books
+FROM library
+GROUP BY genre
+ORDER BY books DESC
+LIMIT 10;
+```
+
+### Example 2 — Top Publishers
+
+```sql
+SELECT publisher,
+       COUNT(*) AS books
+FROM library
+GROUP BY publisher
+ORDER BY books DESC
+LIMIT 5;
+```
+
+These queries help identify the most represented genres and publishers in the personal library.
+
+---
+
+# Data Description
+
+The dataset contains information about books in a personal library, including:
+
+- book title
 - author
 - publisher
 - genre
-- price
 - number of pages
-- reading status
-- reading progress
+- pages read
 - purchase date
+- reading status
+- book price
 
-All records represent **real books from my home library**, making the dataset a real-world example of personal data tracking and analysis.  
-The dataset **continues to grow as new books are added and reading progress is updated**.
-
----
-
-## Key Insights
-
-- The library contains **401 books**.
-- Total spending on books reached **144,831 UAH**.
-- The most common genres include **Fantasy and Romance**.
-- Most books were purchased between **2023 and 2025**.
+The dataset is personal and therefore not publicly shared in this repository.
 
 ---
 
-## Tools Used
+# Conclusion
 
-- Google Sheets
-- Pivot tables
-- Charts
-- Slicers
+This analysis provides insights into personal reading behavior and book collection patterns.
 
----
+The dashboard shows how the library has grown over time, highlights dominant genres and publishers, and tracks reading progress through completion rate and pages read.
 
-## Interactive Dashboard
-
-The interactive Google Sheets dashboard is available upon request.
+Combining SQL, Google Sheets, and Power BI allows the dataset to be explored from multiple analytical perspectives and transformed into clear and interactive visual insights.
