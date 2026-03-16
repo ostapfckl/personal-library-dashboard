@@ -42,11 +42,11 @@ personal-library-dashboard
 
 ## Tools Used
 
-### SQL
-Used for data exploration and analytical queries to extract insights from the dataset.
-
 ### Google Sheets
 Used for data cleaning and basic exploration.
+
+### SQL
+Used for data exploration and analytical queries to extract insights from the dataset.
 
 ### Power BI
 Used to build an interactive dashboard that visualizes the key metrics and insights.
