@@ -8,7 +8,7 @@ The analysis combines SQL, Google Sheets, and Power BI to transform raw library 
 
 ---
 
-# Research Objective
+## Research Objective
 
 The main objectives of this analysis are:
 
@@ -20,24 +20,27 @@ The main objectives of this analysis are:
 - Explore relationships between book price, pages, and reading activity
 
 ---
-# Project Structure
+
+## Project Structure
 
 ```
 personal-library-dashboard
 │
-├── powerbi
-│   └── personal-library-powerbi-dashboard.png
-│
-├── sheets
+├── 01_sheets
 │   └── personal-library-dashboard-google-sheets.png
 │
-├── sql
+├── 02_sql
 │   └── library-analysis.sql
+│
+├── 03_powerbi
+│   └── personal-library-powerbi-dashboard.png
 │
 └── README.md
 ```
 
-# Tools Used
+---
+
+## Tools Used
 
 ### SQL
 Used for data exploration and analytical queries to extract insights from the dataset.
@@ -50,47 +53,17 @@ Used to build an interactive dashboard that visualizes the key metrics and insig
 
 ---
 
-# Google Sheets Dashboard
+## Google Sheets Dashboard
 
 The Google Sheets dashboard was used for data cleaning, initial exploration, and basic analysis of the dataset.
 
 ### Dashboard Preview
 
-![Google Sheets Dashboard](sheets/personal-library-dashboard-google-sheets.png)
-
-
----
-
-# Power BI Dashboard
-
-The Power BI dashboard visualizes key insights from the dataset.
-
-### Key Metrics
-
-- Total Library Cost
-- Total Books
-- Total Pages
-- Books Read
-- Completion Rate
-- Average Book Price
-- Cost per Page Read
-
-### Analytical Insights
-
-- Books acquired by year
-- Reading completion trend
-- Genre distribution
-- Top publishers
-- Reading status distribution
-- Average book price trend
-
-### Dashboard Preview
-
-![Power BI Dashboard](powerbi/personal-library-powerbi-dashboard.png)
+![Google Sheets Dashboard](01_sheets/personal-library-dashboard-google-sheets.png)
 
 ---
 
-# SQL Analysis Examples
+## SQL Analysis Examples
 
 Some insights were explored using SQL queries.
 
@@ -119,8 +92,6 @@ year | total_books | avg_price
 2025 | 108         | 440.85
 2026 | 13          | 505.00
 ```
-
----
 
 ### Example 2 — Most Expensive and Cheapest Publishers (Price per Page)
 
@@ -172,7 +143,36 @@ These queries help identify trends in book acquisition and compare publishers ba
 
 ---
 
-# Data Description
+## Power BI Dashboard
+
+The Power BI dashboard visualizes key insights from the dataset.
+
+### Key Metrics
+
+- Total Library Cost
+- Total Books
+- Total Pages
+- Books Read
+- Completion Rate
+- Average Book Price
+- Cost per Page Read
+
+### Analytical Insights
+
+- Books acquired by year
+- Reading completion trend
+- Genre distribution
+- Top publishers
+- Reading status distribution
+- Average book price trend
+
+### Dashboard Preview
+
+![Power BI Dashboard](03_powerbi/personal-library-powerbi-dashboard.png)
+
+---
+
+## Data Description
 
 The dataset contains information about books in a personal library, including:
 
@@ -190,7 +190,7 @@ The dataset is personal and therefore not publicly shared in this repository.
 
 ---
 
-# Conclusion
+## Conclusion
 
 This analysis provides insights into personal reading behavior and book collection patterns.
 
