@@ -20,6 +20,22 @@ The main objectives of this analysis are:
 - Explore relationships between book price, pages, and reading activity
 
 ---
+# Project Structure
+
+```
+personal-library-dashboard
+│
+├── powerbi
+│   └── personal-library-powerbi-dashboard.png
+│
+├── sheets
+│   └── personal-library-dashboard-google-sheets.png
+│
+├── sql
+│   └── library-analysis.sql
+│
+└── README.md
+```
 
 # Tools Used
 
@@ -42,24 +58,6 @@ The Google Sheets dashboard was used for data cleaning, initial exploration, and
 
 ![Google Sheets Dashboard](sheets/personal-library-dashboard-google-sheets.png)
 
----
-
-# Project Structure
-
-```
-personal-library-dashboard
-│
-├── powerbi
-│   └── personal-library-powerbi-dashboard.png
-│
-├── sheets
-│   └── personal-library-dashboard-google-sheets.png
-│
-├── sql
-│   └── library-analysis.sql
-│
-└── README.md
-```
 
 ---
 
