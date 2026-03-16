@@ -29,10 +29,18 @@ Used for data exploration and analytical queries to extract insights from the da
 ### Google Sheets
 Used for data cleaning and basic exploration.
 
-![Google Sheets Dashboard](sheets/personal-library-dashboard-google-sheets.png)
-
 ### Power BI
 Used to build an interactive dashboard that visualizes the key metrics and insights.
+
+---
+
+# Google Sheets Dashboard
+
+The Google Sheets dashboard was used for data cleaning, initial exploration, and basic analysis of the dataset.
+
+### Dashboard Preview
+
+![Google Sheets Dashboard](sheets/personal-library-dashboard-google-sheets.png)
 
 ---
 
@@ -103,7 +111,7 @@ ORDER BY year;
 
 -- Result:
 
-```
+```text
 year | total_books | avg_price
 2020 | 3           | 223.67
 2021 | 7           | 210.86
@@ -152,7 +160,7 @@ LIMIT 3);
 
 -- Result:
 
-```
+```text
 category        | publisher             | total_books | avg_pages | avg_price_per_page
 Most expensive  | Meridian Czernowitz   | 7           | 288       | 1.409
 Most expensive  | Артбукс               | 6           | 413       | 1.139
@@ -161,7 +169,9 @@ Cheapest        | Ранок                 | 9           | 524       | 0.586
 Cheapest        | BookChef              | 24          | 509       | 0.595
 Cheapest        | Фоліо                 | 11          | 296       | 0.652
 ```
+
 These queries help identify trends in book acquisition and compare publishers based on the average price per page.
+
 ---
 
 # Data Description
