@@ -186,8 +186,6 @@ The dataset contains information about books in a personal library, including:
 - reading status
 - book price
 
-The dataset is personal and therefore not publicly shared in this repository.
-
 ---
 
 ## Conclusion
