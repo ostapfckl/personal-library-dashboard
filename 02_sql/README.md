@@ -1,4 +1,4 @@
-![Books by Year](books_by_year_avg_price.png)
+![Books by Year](books_by_year.png)
 
 
 # Personal Library SQL Analysis
