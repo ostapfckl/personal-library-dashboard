@@ -1,3 +1,6 @@
+![Books by Year](02_sql/books_by_year_avg_price.png)
+
+
 # Personal Library SQL Analysis
 
 Dataset: personal book library (401 books)  
