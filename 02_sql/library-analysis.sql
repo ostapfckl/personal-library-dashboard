@@ -24,7 +24,6 @@ ORDER BY year;
 -- 2024 | 152         | 363.50
 -- 2025 | 108         | 440.85
 -- 2026 | 13          | 505.00
-![Books Purchased](02_sql/books_by_year_avg_price.png)
 -- Insight:
 -- Average book prices generally increased over time, especially from 2023 onward.
 -- The lower averages in 2021 and 2023 should be interpreted carefully because
