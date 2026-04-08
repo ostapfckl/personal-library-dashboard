@@ -1,6 +1,3 @@
-![Books by Year](books_by_year.png)
-
-
 # Personal Library SQL Analysis
 
 Dataset: personal book library (401 books)  
@@ -33,7 +30,7 @@ year | total_books | avg_price
 2025 | 108         | 440.85  
 2026 | 13          | 505.00  
 
-![Books by Year](books_by_year_avg_price.png)
+![Books by Year](books_by_year.png)
 
 Insight:
 
