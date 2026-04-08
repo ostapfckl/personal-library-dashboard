@@ -30,7 +30,7 @@ year | total_books | avg_price
 2025 | 108         | 440.85  
 2026 | 13          | 505.00  
 
-![Books](./books_by_year_avg_price.png)
+![](books_by_year_avg_price.png)
 
 Insight:
 
