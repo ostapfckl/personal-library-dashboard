@@ -1,5 +1,3 @@
-# TEST
-
 ![](books_by_year_avg_price.png)
 
 
