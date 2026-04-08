@@ -1,3 +1,8 @@
+# TEST
+
+![](books_by_year_avg_price.png)
+
+
 # Personal Library SQL Analysis
 
 Dataset: personal book library (401 books)  
