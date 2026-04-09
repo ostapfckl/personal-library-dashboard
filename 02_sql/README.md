@@ -165,7 +165,11 @@ LIMIT 10;
 
 **Insight:**
 
-Poetry has the highest price per page.
+Price per page varies significantly across genres, with poetry and manga showing the highest values.
+
+These genres typically have shorter average length, which contributes to a higher cost per page, while longer genres such as romance or sports fiction provide better value.
+
+This highlights that genre plays an important role in pricing structure, not just book length alone.
 
 ---
 
