@@ -19,26 +19,25 @@ GROUP BY EXTRACT(YEAR FROM purchase_date)
 ORDER BY year;
 ```
 
-Result:
+**Result:**
 
-year | total_books | avg_price  
-2020 | 3           | 223.67  
-2021 | 7           | 210.86  
-2022 | 2           | 374.00  
-2023 | 115         | 282.68  
-2024 | 152         | 363.50  
-2025 | 108         | 440.85  
-2026 | 13          | 505.00  
+| year | total_books | avg_price |
+|---|---:|---:|
+| 2020 | 3 | 223.67 |
+| 2021 | 7 | 210.86 |
+| 2022 | 2 | 374.00 |
+| 2023 | 115 | 282.68 |
+| 2024 | 152 | 363.50 |
+| 2025 | 108 | 440.85 |
+| 2026 | 13 | 505.00 |
 
 ![Books by Year](screenshots/books_by_year.png)
 
-Insight:
+**Insight:**
 
 Average book prices generally increased over time, especially from 2023 onward.  
 The lower averages in 2021 and 2023 should be interpreted carefully because  
-yearly results can be influenced by sample size. In particular, 2020–2022  
-contain very few books, so those averages are less reliable than the results  
-for 2023–2025, where the dataset is much larger.
+yearly results can be influenced by sample size.
 
 ---
 
@@ -69,22 +68,21 @@ FROM yearly_stats
 ORDER BY year;
 ```
 
-Result:
+**Result:**
 
-year | total_books | avg_price | pct_change  
-2023 | 115         | 282.68    | NULL  
-2024 | 152         | 363.50    | 28.59  
-2025 | 108         | 440.85    | 21.28  
-2026 | 13          | 505.00    | 14.55  
+| year | total_books | avg_price | pct_change |
+|---|---:|---:|---:|
+| 2023 | 115 | 282.68 | NULL |
+| 2024 | 152 | 363.50 | 28.59 |
+| 2025 | 108 | 440.85 | 21.28 |
+| 2026 | 13 | 505.00 | 14.55 |
 
 ![YoY Price Growth](screenshots/price_growth_yoy.png)
 
-Insight:
+**Insight:**
 
 After filtering out years with fewer than 10 books, the analysis shows  
-a consistent year-over-year increase in average book prices.  
-The sharpest increase occurred in 2024 (+28.59%), followed by continued  
-growth in 2025 (+21.28%) and 2026 (+14.55%).  
+a consistent year-over-year increase in average book prices.
 
 ---
 
@@ -104,23 +102,22 @@ ORDER BY price_per_page DESC
 LIMIT 10;
 ```
 
-Result:
+**Result:**
 
- Result:
- title                          | author                  | price | pages | price_per_page
- Тіні забутих предків           | Михайло Коцюбинський    | 395   | 136   | 2.904
- 30 віршів про любов і залізницю| Сергій Жадан            | 228   | 88    | 2.591
- Тільки не пиши мені про війну  | Павло Вишебаба          | 295   | 120   | 2.458
- Список кораблів                | Сергій Жадан            | 360   | 160   | 2.250
- Племʼя                         | Себастьян Юнґер         | 270   | 128   | 2.109
- Таємниці маєтку шипів          | Марґарет Роджерсон      | 300   | 144   | 2.083
- Конклав                        | Пенелопа Дуглас         | 225   | 112   | 2.009
- Радуйся жінко                  | Мар'яна Савка           | 180   | 96    | 1.875
- Тамплієри                      | Сергій Жадан            | 225   | 120   | 1.875
- Знайди мене                    | Тагере Мафі             | 300   | 160   | 1.875
-Top books with highest price per page.
+| title | author | price | pages | price_per_page |
+|---|---|---:|---:|---:|
+| Тіні забутих предків | Михайло Коцюбинський | 395 | 136 | 2.904 |
+| 30 віршів про любов і залізницю | Сергій Жадан | 228 | 88 | 2.591 |
+| Тільки не пиши мені про війну | Павло Вишебаба | 295 | 120 | 2.458 |
+| Список кораблів | Сергій Жадан | 360 | 160 | 2.250 |
+| Племʼя | Себастьян Юнґер | 270 | 128 | 2.109 |
+| Таємниці маєтку шипів | Марґарет Роджерсон | 300 | 144 | 2.083 |
+| Конклав | Пенелопа Дуглас | 225 | 112 | 2.009 |
+| Радуйся жінко | Мар'яна Савка | 180 | 96 | 1.875 |
+| Тамплієри | Сергій Жадан | 225 | 120 | 1.875 |
+| Знайди мене | Тагере Мафі | 300 | 160 | 1.875 |
 
-Insight:
+**Insight:**
 
 Shorter books tend to have higher price per page.
 
@@ -142,7 +139,22 @@ ORDER BY avg_price_per_page DESC
 LIMIT 10;
 ```
 
-Insight:
+**Result:**
+
+| genre | total_books | avg_pages | avg_price_per_page |
+|---|---:|---:|---:|
+| Поезія | 9 | 196 | 1.760 |
+| Нон-фікшн | 7 | 278 | 1.210 |
+| Українська класика | 7 | 330 | 1.200 |
+| Ромком | 3 | 299 | 1.198 |
+| Манга | 3 | 157 | 1.164 |
+| Мафія | 2 | 443 | 1.044 |
+| Біографічна проза | 3 | 362 | 1.006 |
+| Даркроман | 8 | 497 | 0.974 |
+| Любовний роман | 94 | 405 | 0.972 |
+| Спортивний роман | 24 | 479 | 0.962 |
+
+**Insight:**
 
 Poetry has the highest price per page.
 
@@ -182,7 +194,18 @@ ORDER BY avg_price_per_page
 LIMIT 3);
 ```
 
-Insight:
+**Result:**
+
+| category | publisher | total_books | avg_pages | avg_price_per_page |
+|---|---|---:|---:|---:|
+| Most expensive | Meridian Czernowitz | 7 | 288 | 1.409 |
+| Most expensive | Артбукс | 6 | 413 | 1.139 |
+| Most expensive | Readberry | 27 | 433 | 1.128 |
+| Cheapest | Ранок | 9 | 524 | 0.586 |
+| Cheapest | BookChef | 24 | 509 | 0.595 |
+| Cheapest | Фоліо | 11 | 296 | 0.652 |
+
+**Insight:**
 
 Price per page differs significantly between publishers.
 
@@ -203,7 +226,16 @@ GROUP BY status
 ORDER BY total_books DESC;
 ```
 
-Insight:
+**Result:**
+
+| status | total_books | percentage |
+|---|---:|---:|
+| Прочитано | 210 | 52.37 |
+| Не прочитано | 176 | 43.89 |
+| Почато | 14 | 3.49 |
+| Закинуто | 1 | 0.25 |
+
+**Insight:**
 
 More than half of books are completed.
 
@@ -227,7 +259,15 @@ WHERE rank_by_books <= 3
 ORDER BY rank_by_books;
 ```
 
-Insight:
+**Result:**
+
+| year | total_books | rank_by_books |
+|---|---:|---:|
+| 2024 | 152 | 1 |
+| 2023 | 115 | 2 |
+| 2025 | 108 | 3 |
+
+**Insight:**
 
 2024 is the peak year of purchases.
 
@@ -251,7 +291,22 @@ HAVING COUNT(*) >= 5
 ORDER BY completion_rate DESC;
 ```
 
-Insight:
+**Result:**
+
+| genre | total_books | completed_books | completion_rate |
+|---|---:|---:|---:|
+| Спортивний роман | 24 | 24 | 100.00 |
+| Антиутопія | 5 | 4 | 80.00 |
+| Даркроман | 9 | 7 | 77.78 |
+| Любовний роман | 94 | 63 | 67.02 |
+| Фентезі | 139 | 72 | 51.80 |
+| Сучасна проза | 59 | 24 | 40.68 |
+| Українська класика | 7 | 1 | 14.29 |
+| Нон-фікшн | 7 | 1 | 14.29 |
+| Класика | 17 | 2 | 11.76 |
+| Поезія | 9 | 1 | 11.11 |
+
+**Insight:**
 
 Completion rates differ significantly by genre.
 
@@ -259,6 +314,8 @@ Completion rates differ significantly by genre.
 
 ## Final Summary
 
-Book prices increased over time.  
-Shorter books are more expensive per page.  
-Reading behavior varies across genres.
+- Book prices increased over time  
+- Shorter books are more expensive per page  
+- Price varies across publishers  
+- Reading behavior differs by genre  
+- A significant share of books remains unread  
