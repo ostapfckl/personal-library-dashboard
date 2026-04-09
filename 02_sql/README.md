@@ -40,6 +40,7 @@ The chart shows a sharp spike in average book prices in 2022, which may be relat
 In 2023, prices partially corrected and stabilized, suggesting a short-term adjustment after the initial shock.
 
 In the following years, a steady upward trend is observed, likely driven by inflation and broader economic factors.
+
 ---
 
 ## 2 Year-over-year change in average book price
