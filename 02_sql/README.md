@@ -218,6 +218,8 @@ LIMIT 3);
 | Cheapest | BookChef | 24 | 509 | 0.595 |
 | Cheapest | Фоліо | 11 | 296 | 0.652 |
 
+![Price per Page: Premium vs Budget Publishers](screenshots/price_per_page_premium_vs_budget_publishers.png)
+
 **Insight:**
 
 Price per page differs significantly between publishers.
