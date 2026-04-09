@@ -77,6 +77,8 @@ year | total_books | avg_price | pct_change
 2025 | 108         | 440.85    | 21.28  
 2026 | 13          | 505.00    | 14.55  
 
+![YoY Price Growth](screenshots/price_growth_yoy.png)
+
 Insight:
 
 After filtering out years with fewer than 10 books, the analysis shows  
