@@ -154,6 +154,8 @@ LIMIT 10;
 | Любовний роман | 94 | 405 | 0.972 |
 | Спортивний роман | 24 | 479 | 0.962 |
 
+![Price vs Pages by Genre](screenshots/price_vs_pages_by_genre.png)
+
 **Insight:**
 
 Poetry has the highest price per page.
