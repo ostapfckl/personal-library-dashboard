@@ -35,10 +35,11 @@ ORDER BY year;
 
 **Insight:**
 
-Average book prices generally increased over time, especially from 2023 onward.  
-The lower averages in 2021 and 2023 should be interpreted carefully because  
-yearly results can be influenced by sample size.
+The chart shows a sharp spike in average book prices in 2022, which may be related to market disruptions following the start of the war in Ukraine.
 
+In 2023, prices partially corrected and stabilized, suggesting a short-term adjustment after the initial shock.
+
+In the following years, a steady upward trend is observed, likely driven by inflation and broader economic factors.
 ---
 
 ## 2 Year-over-year change in average book price
