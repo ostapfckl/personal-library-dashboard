@@ -124,7 +124,9 @@ LIMIT 10;
 
 **Insight:**
 
-Shorter books tend to have higher price per page.
+The results do not reveal a clear pattern related to specific authors or publishers driving higher prices.
+
+Instead, the main factor appears to be book length — shorter books tend to have a higher price per page.
 
 ---
 
