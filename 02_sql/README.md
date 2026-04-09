@@ -83,8 +83,11 @@ ORDER BY year;
 
 **Insight:**
 
-After filtering out years with fewer than 10 books, the analysis shows  
-a consistent year-over-year increase in average book prices.
+The analysis shows a steady year-over-year increase in average book prices.
+
+At the same time, the rate of growth is gradually slowing down, which may indicate that the market has passed its most turbulent phase and is moving toward stabilization.
+
+Barring any new major disruptions, price increases will likely be more in line with general inflation trends.
 
 ---
 
