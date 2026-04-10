@@ -223,7 +223,7 @@ LIMIT 3);
 
 **Insight:**
 
-Price per page differs significantly between publishers.
+The more than 2x difference in price per page shows that pricing depends not only on book length, but also on factors like paper quality and page size.
 
 ---
 
