@@ -81,6 +81,7 @@ ORDER BY year;
 
 ![YoY Price Growth](screenshots/price_growth_yoy.png)
 
+
 **Insight:**
 
 The analysis shows a steady year-over-year increase in average book prices.
@@ -249,6 +250,8 @@ ORDER BY total_books DESC;
 | Не прочитано | 176 | 43.89 |
 | Почато | 14 | 3.49 |
 | Закинуто | 1 | 0.25 |
+
+![Reading Status Distribution](screenshots/reading_status_distribution.png)
 
 **Insight:**
 
