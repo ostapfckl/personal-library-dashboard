@@ -324,6 +324,8 @@ ORDER BY completion_rate DESC;
 | Класика | 17 | 2 | 11.76 |
 | Поезія | 9 | 1 | 11.11 |
 
+![Completion Rate by Genre](screenshots/completion_rate_by_genre.png)
+
 **Insight:**
 
 Completion rates differ significantly by genre.
