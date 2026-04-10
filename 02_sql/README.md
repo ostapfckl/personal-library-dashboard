@@ -255,7 +255,8 @@ ORDER BY total_books DESC;
 
 **Insight:**
 
-More than half of books are completed.
+Only one book was abandoned, suggesting that truly disappointing books are rare. Many “Started” books indicate a tendency to continue reading rather than drop books.
+The large number of "Not read" books suggests that buying and reading books are two different habits.)
 
 ---
 
@@ -287,7 +288,8 @@ ORDER BY rank_by_books;
 
 **Insight:**
 
-2024 is the peak year of purchases.
+Book purchases peaked in 2024 with 152 books, indicating a period of increased buying activity compared to other years.
+However, no clear upward or downward trend is observed, and more data is needed to assess the overall trend.
 
 ---
 
@@ -328,7 +330,8 @@ ORDER BY completion_rate DESC;
 
 **Insight:**
 
-Completion rates differ significantly by genre.
+All sports novels were completed (100%), making this genre a reliable choice, though based on a relatively small sample. 
+Fantasy and romance also show strong engagement, with the highest number of completed books. These genres are the most likely to be read fully.
 
 ---
 
