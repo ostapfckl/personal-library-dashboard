@@ -337,8 +337,9 @@ Fantasy and romance also show strong engagement, with the highest number of comp
 
 ## Final Summary
 
-- Book prices increased over time  
-- Shorter books are more expensive per page  
-- Price varies across publishers  
-- Reading behavior differs by genre  
-- A significant share of books remains unread  
+- Book prices spiked in 2022 and later stabilized, with recent growth aligning more closely with inflation trends.
+- Book length is a key factor in pricing, as shorter books tend to have a higher price per page.
+- Pricing also varies by genre and publisher, with differences driven by factors such as format, paper quality, and positioning.
+- Reading behavior shows strong completion habits, with very few abandoned books but many “in progress” and unread books, indicating that buying and reading are distinct habits.
+- Book purchases peaked in 2024, though no clear long-term trend is observed.
+- Sports novels show the highest completion rate, while fantasy and romance demonstrate consistently strong engagement. 
