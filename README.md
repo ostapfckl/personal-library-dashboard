@@ -30,10 +30,13 @@ personal-library-dashboard
 │   └── personal-library-dashboard-google-sheets.png
 │
 ├── 02_sql
+│   ├── screenshots
+│   ├── README.md
 │   └── library-analysis.sql
 │
 ├── 03_powerbi
-│   └── personal-library-powerbi-dashboard.png
+│   ├── personal-library-powerbi-dashboard.png
+│   └── README.md
 │
 └── README.md
 ```
