@@ -94,7 +94,7 @@ ORDER BY year;
 | 2025 | 108 | 440.85 |
 | 2026 | 13 | 505.00 |
 
-![Books by Year](screenshots/books_by_year.png)
+![Books by Year](02_sql/screenshots/books_by_year.png)
 
 **Insight:**
 
@@ -104,7 +104,6 @@ In 2023, prices partially corrected and stabilized, suggesting a short-term adju
 
 In the following years, a steady upward trend is observed, likely driven by inflation and broader economic factors.
 
-```
 
 ### Example 2 — Most Expensive and Cheapest Publishers (Price per Page)
 
