@@ -69,6 +69,8 @@ Some insights were explored using SQL queries.
 
 ### Example 1 — Library Growth and Average Book Price by Year
 
+Average book price by year
+
 ```sql
 SELECT 
     EXTRACT(YEAR FROM purchase_date) AS year,
@@ -80,17 +82,28 @@ GROUP BY EXTRACT(YEAR FROM purchase_date)
 ORDER BY year;
 ```
 
--- Result:
+**Result:**
 
-```text
-year | total_books | avg_price
-2020 | 3           | 223.67
-2021 | 7           | 210.86
-2022 | 2           | 374.00
-2023 | 115         | 282.68
-2024 | 152         | 363.50
-2025 | 108         | 440.85
-2026 | 13          | 505.00
+| year | total_books | avg_price |
+|---|---:|---:|
+| 2020 | 3 | 223.67 |
+| 2021 | 7 | 210.86 |
+| 2022 | 2 | 374.00 |
+| 2023 | 115 | 282.68 |
+| 2024 | 152 | 363.50 |
+| 2025 | 108 | 440.85 |
+| 2026 | 13 | 505.00 |
+
+![Books by Year](screenshots/books_by_year.png)
+
+**Insight:**
+
+The chart shows a sharp spike in average book prices in 2022, which may be related to market disruptions following the start of the war in Ukraine.
+
+In 2023, prices partially corrected and stabilized, suggesting a short-term adjustment after the initial shock.
+
+In the following years, a steady upward trend is observed, likely driven by inflation and broader economic factors.
+
 ```
 
 ### Example 2 — Most Expensive and Cheapest Publishers (Price per Page)
