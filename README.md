@@ -139,17 +139,18 @@ ORDER BY avg_price_per_page
 LIMIT 3);
 ```
 
--- Result:
+**Result:**
 
-```text
-category        | publisher             | total_books | avg_pages | avg_price_per_page
-Most expensive  | Meridian Czernowitz   | 7           | 288       | 1.409
-Most expensive  | Артбукс               | 6           | 413       | 1.139
-Most expensive  | Readberry             | 27          | 433       | 1.128
-Cheapest        | Ранок                 | 9           | 524       | 0.586
-Cheapest        | BookChef              | 24          | 509       | 0.595
-Cheapest        | Фоліо                 | 11          | 296       | 0.652
-```
+| category | publisher | total_books | avg_pages | avg_price_per_page |
+|---|---|---:|---:|---:|
+| Most expensive | Meridian Czernowitz | 7 | 288 | 1.409 |
+| Most expensive | Артбукс | 6 | 413 | 1.139 |
+| Most expensive | Readberry | 27 | 433 | 1.128 |
+| Cheapest | Ранок | 9 | 524 | 0.586 |
+| Cheapest | BookChef | 24 | 509 | 0.595 |
+| Cheapest | Фоліо | 11 | 296 | 0.652 |
+
+![Price per Page: Premium vs Budget Publishers](02_sal/screenshots/price_per_page_premium_vs_budget_publishers.png)
 
 These queries help identify trends in book acquisition and compare publishers based on the average price per page.
 
