@@ -150,7 +150,7 @@ LIMIT 3);
 | Cheapest | BookChef | 24 | 509 | 0.595 |
 | Cheapest | Фоліо | 11 | 296 | 0.652 |
 
-![Price per Page: Premium vs Budget Publishers](02_sal/screenshots/price_per_page_premium_vs_budget_publishers.png)
+![Price per Page: Premium vs Budget Publishers](02_sql/screenshots/price_per_page_premium_vs_budget_publishers.png)
 
 These queries help identify trends in book acquisition and compare publishers based on the average price per page.
 
